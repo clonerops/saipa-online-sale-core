@@ -1,5 +1,5 @@
 import { Swiper } from "swiper/react";
-import type { ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 
 import { Autoplay, Navigation } from "swiper/modules";
 import { ReactSVG } from "react-svg";
@@ -22,19 +22,21 @@ const Slider = ({
   hasNavigation = true,
   children,
 }: IProps) => {
+  const nextRef = useRef<HTMLDivElement>(null);
+  const prevRef = useRef<HTMLDivElement>(null);
   return (
     <div className="slider">
       <div className="slider__header">
         <div className="slider__title">{title}</div>
         {hasNavigation && (
           <div className="slider__navigation">
-            <div className="slider__next">
+            <div ref={nextRef} className="slider__next">
               <ReactSVG
                 src="/svg/arrow-slide.svg"
                 className="slider__next-arrow"
               />
             </div>
-            <div className="slider__prev">
+            <div ref={prevRef} className="slider__prev">
               <ReactSVG
                 src="/svg/arrow-slide.svg"
                 className="slider__prev-arrow"
@@ -55,6 +57,15 @@ const Slider = ({
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
+          }}
+          onBeforeInit={(swiper) => {
+            if (
+              swiper.params.navigation &&
+              typeof swiper.params.navigation !== "boolean"
+            ) {
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.params.navigation.prevEl = prevRef.current;
+            }
           }}
           className="slider__content-box"
         >

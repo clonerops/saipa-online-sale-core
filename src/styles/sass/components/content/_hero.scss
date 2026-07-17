@@ -1,13 +1,23 @@
 @use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
 
-.hero { 
+.hero {
   display: flex;
   justify-content: space-between;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
-
     gap: 1rem;
+
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-text-box {
       display: flex;
@@ -61,8 +71,12 @@
     &-btn-box {
       display: flex;
       gap: 1rem;
-
       margin-top: 3rem;
+
+      @include respond(tab-land) {
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &-users {

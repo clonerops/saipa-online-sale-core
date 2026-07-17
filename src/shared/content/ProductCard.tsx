@@ -4,19 +4,29 @@ import Button from "../components/Button";
 
 interface IProps {
   ratio?: string;
+  label?: string;
+  image: string;
+  title: string;
+  logo: string;
 }
 
-const ProductCard = ({ ratio = "product-port" }: IProps) => {
+const ProductCard = ({
+  ratio = "product-port",
+  label,
+  image,
+  title,
+  logo,
+}: IProps) => {
   return (
     <div className={`product ${ratio}`}>
-      <label className="product__label">فروش فوری</label>
+      <label className="product__label">{label}</label>
       <div className="product__img-box">
-        <img src="images/changan.webp" className="product__img" />
+        <img src={image} className="product__img" />
       </div>
       <div className="product__content">
         <div className="product__text-box">
-          <h3 className="product__text">چانگان cs 55 پلاس</h3>
-          <ReactSVG src="/svg/changan-logo.svg" className="product__icon" />
+          <h3 className="product__text">{title}</h3>
+          <ReactSVG src={logo} className="product__icon" />
         </div>
         <div className="product__feature-box">
           <span className="product__feature-box-span">طرح عادی</span>
