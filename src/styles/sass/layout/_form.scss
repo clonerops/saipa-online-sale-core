@@ -1,0 +1,17 @@
+@use "../abstracts/variables"as*;
+
+.form {
+    border-top: 1px solid $color-gray-200;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    margin-bottom: 0;
+    min-width: 46rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__password-box {
+        position: relative;
+    }
+}

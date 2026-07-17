@@ -1,0 +1,87 @@
+@use "../../abstracts/variables" as *;
+.filter-card-wrapper {
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.filter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background-color: $color-white;
+  border-radius: 1.6rem;
+
+  clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+
+  &:hover &__title {
+    color: $color-primary;
+  }
+
+  &__title {
+    font-size: $default-font-size;
+    font-family: Vazir_Bold;
+    color: $color-gray;
+  }
+  &__text {
+    font-size: 1.2rem;
+    font-family: Vazir;
+  }
+
+  //   CORNER
+  // بالا راست
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-top: 3px solid $color-primary;
+    border-right: 3px solid $color-primary;
+    opacity: 0;
+  }
+  // پایین راست
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 3px solid $color-primary;
+    border-right: 3px solid $color-primary;
+    opacity: 0;
+  }
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover .filter-card__border::before,
+  &:hover .filter-card__border::after {
+    opacity: 1;
+  }
+}
+
+.filter-card__border {
+  position: absolute;
+  inset: 0; // top:0 right:0 bottom:0 left:0
+  pointer-events: none;
+
+  // پایین چپ
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 3px solid $color-primary;
+    border-left: 3px solid $color-primary;
+    opacity: 0;
+  }
+}

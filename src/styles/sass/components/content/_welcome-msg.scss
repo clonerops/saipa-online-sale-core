@@ -1,0 +1,57 @@
+  @use "../../abstracts/variables"as *;
+
+  .welcome-msg {
+      color: $color-gray;
+
+      &__up {
+          font-size: 2rem;
+          font-weight: 500;
+          font-family: Vazir;
+      }
+
+      &__main {
+          font-size: 2.4rem;
+          font-family: Vazir_Bold;
+          font-weight: 800;
+      }
+
+      &__saipa {
+          font-size: 2.4rem;
+          font-family: Vazir_Bold;
+          font-weight: 800;
+          color: $color-primary;
+          position: relative;
+
+          &::after {
+              content: "";
+              position: absolute;
+              top: -3px;
+              left: 0px;
+              right: -23px;
+              width: 8rem;
+              height: 4rem;
+              background-color: $color-gray-100;
+              padding: 0.2rem 1rem;
+              transform: rotate(-11deg);
+              z-index: -1;
+          }
+      }
+
+      &__down {
+          font-size: 2rem;
+          font-weight: 500;
+          font-family: Vazir_Medium;
+          position: relative;
+
+          &::after {
+              content: "";
+              width: 1px;
+              position: absolute;
+              height: 40px;
+              background-color: $color-gray;
+              transform: rotate(90deg);
+              right: 12rem;
+              top: 0;
+          }
+      }
+  }

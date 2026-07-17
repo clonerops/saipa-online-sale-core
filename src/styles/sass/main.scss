@@ -1,0 +1,40 @@
+@use "abstracts/mixins";
+@use "abstracts/variables";
+
+@use "layout/container";
+@use "layout/footer";
+@use "layout/form";
+@use "layout/header";
+@use "layout/content";
+
+@use "base/base";
+
+@use "components/auth/captcha";
+
+@use "components/content/action-card";
+@use "components/content/intro-section";
+@use "components/content/user-reviews";
+@use "components/content/welcome-msg";
+@use "components/content/product";
+@use "components/content/hero";
+@use "components/content/filter-card";
+
+@use "components/header/logo-horizontal";
+@use "components/header/navigation-into";
+@use "components/header/navigation";
+@use "components/header/phone";
+
+@use "components/footer/enamad";
+@use "components/footer/logo-vertical";
+@use "components/footer/popular-links";
+@use "components/footer/pre-footer";
+@use "components/footer/support-links";
+
+@use "components/shared/accardion";
+@use "components/shared/button";
+@use "components/shared/slider";
+@use "components/shared/input";
+
+@use "pages/login";
+@use "pages/register";
+@use "pages/home";

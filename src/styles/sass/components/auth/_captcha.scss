@@ -1,0 +1,17 @@
+@use "../../abstracts/variables"as*;
+
+.captcha {
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2.4rem;
+
+        &-img {}
+
+        &-refresh svg {}
+    }
+}

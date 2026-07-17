@@ -1,0 +1,11 @@
+@use "../abstracts/variables"as*;
+@use "../abstracts/typography"as*;
+
+.header {
+    background-color: $color-white;
+    padding: 1.6rem 0.8rem;
+    border-radius: 1.6rem;
+    margin: 2.4rem;
+
+    display: flex;
+}

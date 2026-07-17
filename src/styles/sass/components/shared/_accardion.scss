@@ -1,0 +1,29 @@
+@use "../../abstracts/variables"as *;
+
+.accordion {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-family: Vazir_Bold;
+        color: $color-gray;
+
+    }
+
+    &__arrow svg {
+        height: 1.6rem;
+        transition: transform .3s ease;
+        fill: $color-gray;
+        stroke: $color-gray;
+    }
+
+    &[open] &__arrow svg {
+        transform: rotate(180deg);
+    }
+}

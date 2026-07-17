@@ -1,0 +1,35 @@
+    @use "../../abstracts/variables"as *;
+
+    .action-box {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .action-card {
+        background-color: $color-gray-50;
+        padding: 1.2rem 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 1.6rem;
+
+        &__text-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            font-family: Vazir_Bold;
+            font-weight: 800;
+            color: $color-gray;
+        }
+
+        &__sub {
+            font-size: 1.2rem;
+            font-family: Vazir_Thin;
+            font-weight: 400;
+            color: $color-gray;
+            width: 80%;
+        }
+    }

@@ -1,0 +1,26 @@
+@use "../../abstracts/variables"as *;
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    flex-direction: row-reverse;
+    margin-left: 1rem;
+
+    &__icon svg {
+        width: 100%;
+        min-height: 3rem;
+        max-height: 3rem;
+        padding: .6rem;
+        border-radius: 50%;
+        background-color: $color-secondary-opacity-16;
+        fill: $color-secondary;
+    }
+
+    &__text {
+        direction: ltr;
+        font-family: Vazir;
+        font-size: $default-font-size;
+        color: $color-secondary;
+    }
+}

@@ -1,0 +1,79 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+.slider {
+  position: relative;
+
+  max-width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between
+  }
+
+  &__title {
+    position: relative;
+    font-size: $default-font-size;
+    font-family: Vazir_Bold;
+    padding-bottom: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 60%;
+      height: 6px;
+      background-color: $color-primary;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 1rem;
+  }
+
+  &__content-box {
+    min-width: 0;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 39rem;
+    background-size: cover;
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+  }
+
+  &__next,
+  &__prev {
+    @include flex-center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 40%;
+    border: 1px solid $color-gray-300;
+    &-arrow {
+      fill: $color-secondary;
+      stroke: $color-secondary;
+    }
+  }
+
+  &__next {
+    &-arrow {
+      transform: rotate(180deg);
+      padding-top: 0.5rem;
+      margin-left: -2rem;
+    }
+  }
+
+  &__prev {
+    &-arrow {
+      transform: rotate(360deg);
+      margin-left: 2rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../abstracts/variables"as*;
+
+.logo-vertical {
+    flex: 0 0 20%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0.8rem;
+    }
+
+    &__text-1 {
+        font-family: Vazir;
+        font-size: $default-font-size;
+        color: $color-gray;
+    }
+
+    &__text-2 {
+        font-family: Vazir_Bold;
+        font-size: $default-font-size;
+        color: $color-gray;
+    }
+}

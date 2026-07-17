@@ -1,0 +1,33 @@
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+
+/////////////////////////////////////////
+/// FOOTER
+
+.footer {
+
+  // background-color: $color-white;
+  // padding: 2.4rem;
+  padding: 4rem 0;
+
+  &__box {
+    background-color: $color-gray-100;
+    display: flex;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  }
+}

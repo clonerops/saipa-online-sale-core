@@ -1,0 +1,53 @@
+@use "../../abstracts/variables"as*;
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    &__label {
+        font-size: 1.4rem;
+        font-family: Vazir;
+        padding-bottom: 1rem;
+
+        &::placeholder {
+            color: $color-gray;
+        }
+    }
+
+    &__field {
+        width: 100%;
+        padding: 1rem;
+        background-color: $color-gray-50;
+        color: $color-gray;
+        font-size: $default-font-size;
+        font-family: Vazir;
+        border-radius: .8rem;
+        border: 1px solid $color-gray-300;
+        transition: all .2s;
+
+        outline: none;
+
+        &:focus {
+            background-color: $color-gray-100;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        }
+
+        &-hint {
+            font-size: 1.4rem;
+            font-family: Vazir;
+            color: $color-gray;
+        }
+
+    }
+
+    &__icon {
+        position: absolute;
+        top: 4.5rem;
+        left: 1rem;
+
+        cursor: pointer;
+    }
+}

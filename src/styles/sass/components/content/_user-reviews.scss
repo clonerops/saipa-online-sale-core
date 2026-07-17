@@ -1,0 +1,21 @@
+  @use "../../abstracts/variables"as *;
+
+  .user-reviews {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+          height: 4rem;
+          border-radius: 50%;
+
+          margin-left: -10px;
+          border: 3px solid $color-white;
+      }
+
+      &__text {
+          font-size: 1.2rem;
+          font-family: Vazir;
+          color: $color-secondary;
+          margin-right: 1.5rem;
+      }
+  }

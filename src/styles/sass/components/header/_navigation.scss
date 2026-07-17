@@ -1,0 +1,44 @@
+@use "../../abstracts/variables"as *;
+
+.navigation {
+    margin-left: auto;
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__lists {
+        display: flex;
+        list-style: none;
+        background-color: $color-gray-100;
+        border-radius: 1.6rem;
+        padding: .4rem;
+
+    }
+
+    &__list {
+        padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $color-white;
+            padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+            border-radius: 1.2rem;
+        }
+    }
+
+    &__link {
+        display: flex;
+        gap: .8rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-family: Vazir;
+        color: $color-gray;
+    }
+
+    &__icon svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-gray;
+    }
+}
