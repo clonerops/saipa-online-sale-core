@@ -13,71 +13,78 @@ import type { IProduct } from "../../types/product/product.type";
 
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <NavigationIntoApp />
+      <div className="home">
+        <div className="container">
+          <div className="home__content">
+            <Hero />
 
-      <div className="home__content">
-        <Hero />
+            <div className="product-box">
+              <Slider
+                title="محصولات پرفروش"
+                slidesPerView={2}
+                spaceBetween={16}
+              >
+                {Products.map((item: IProduct) => (
+                  <SwiperSlide>
+                    <ProductCard
+                      key={item.id}
+                      image={item.image}
+                      logo={item.logo}
+                      title={item.title}
+                      label={item.label}
+                      ratio="product-land"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Slider>
+            </div>
 
-        <div className="product-box">
-          <Slider title="محصولات پرفروش" slidesPerView={2} spaceBetween={16}>
-            {Products.map((item: IProduct) => (
-              <SwiperSlide>
+            <div className="filter-box">
+              <Slider title="طرح های فروش" slidesPerView={6} spaceBetween={24}>
+                {FiltersDATA.map((item: any) => {
+                  return (
+                    <SwiperSlide>
+                      <FilterCard image={item.image} title={item.title} />
+                    </SwiperSlide>
+                  );
+                })}
+              </Slider>
+            </div>
+
+            <div className="home__products">
+              {Products.map((item: IProduct) => (
                 <ProductCard
                   key={item.id}
                   image={item.image}
                   logo={item.logo}
                   title={item.title}
                   label={item.label}
-                  ratio="product-land"
                 />
-              </SwiperSlide>
-            ))}
-          </Slider>
-        </div>
+              ))}
+            </div>
 
-        <div className="filter-box">
-          <Slider title="طرح های فروش" slidesPerView={6} spaceBetween={24}>
-            {FiltersDATA.map((item: any) => {
-              return (
-                <SwiperSlide>
-                  <FilterCard image={item.image} title={item.title} />
-                </SwiperSlide>
-              );
-            })}
-          </Slider>
-        </div>
-
-        <div className="home__products">
-          {Products.map((item: IProduct) => (
-            <ProductCard
-              key={item.id}
-              image={item.image}
-              logo={item.logo}
-              title={item.title}
-              label={item.label}
-            />
-          ))}
-        </div>
-
-        <div className="product-box">
-          <Slider title="فروش فوری" slidesPerView={2} spaceBetween={16}>
-            {Products.map((item: IProduct) => (
-              <SwiperSlide>
-                <ProductCard
-                  key={item.id}
-                  image={item.image}
-                  logo={item.logo}
-                  title={item.title}
-                  label={item.label}
-                  ratio="product-land"
-                />
-              </SwiperSlide>
-            ))}
-          </Slider>
+            <div className="product-box">
+              <Slider title="فروش فوری" slidesPerView={2} spaceBetween={16}>
+                {Products.map((item: IProduct) => (
+                  <SwiperSlide>
+                    <ProductCard
+                      key={item.id}
+                      image={item.image}
+                      logo={item.logo}
+                      title={item.title}
+                      label={item.label}
+                      ratio="product-land"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Slider>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

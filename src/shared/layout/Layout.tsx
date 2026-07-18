@@ -13,6 +13,7 @@ import PopularLinkData from "../../utils/json/footer-popular-links.json";
 import SupportLinkData from "../../utils/json/footer-support-links.json";
 import ServicesLinkData from "../../utils/json/footer-service-links.json";
 import PreFooter from "./footer/PreFooter";
+import NavigationIntoApp from "./header/NavigationIntoApp";
 
 const Layout = () => {
   return (
@@ -25,12 +26,12 @@ const Layout = () => {
       </header>
 
       <main>
-        <div className="container">
-          <Outlet />
-        </div>
+        {/* <div className="container"> */}
+        <Outlet />
+        {/* </div> */}
       </main>
       <footer className="footer">
-          <PreFooter />
+        <PreFooter />
         <div className="container">
           <div className="footer__box">
             <LogoVertical />

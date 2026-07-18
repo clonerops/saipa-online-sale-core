@@ -6,16 +6,18 @@
 
 .footer {
 
-  // background-color: $color-white;
-  // padding: 2.4rem;
+  background-color: rgba($color-gray-200, 0.5);
   padding: 4rem 0;
 
   &__box {
-    background-color: $color-gray-100;
+    background-color: $color-gray-200;
     display: flex;
     border-radius: 1.6rem;
     padding: 2.4rem;
 
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -29,5 +31,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
+
   }
 }
