@@ -35,7 +35,9 @@
 @use "components/shared/button";
 @use "components/shared/slider";
 @use "components/shared/input";
+@use "components/shared/back-page";
 
 @use "pages/login";
 @use "pages/register";
 @use "pages/home";
+@use "pages/otp";

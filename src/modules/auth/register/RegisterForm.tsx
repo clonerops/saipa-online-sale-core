@@ -1,4 +1,3 @@
-import { ReactSVG } from "react-svg";
 import { useForm, type Path, type SubmitHandler } from "react-hook-form";
 
 import Button from "../../../shared/components/Button";

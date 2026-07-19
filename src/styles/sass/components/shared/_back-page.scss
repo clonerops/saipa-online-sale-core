@@ -1,0 +1,25 @@
+@use "../../abstracts/variables"as*;
+
+.back-page {
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    padding: 2rem 4rem;
+
+    display: flex;
+    gap: 1rem;
+    border-radius: $default-border-radius;
+    cursor: pointer;
+    transition: all .2s;
+
+    position: absolute;
+    right: 8rem;
+
+    &:hover {
+        transform: scale(1.05) translateY(3px);
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-family: Vazir;
+        color: $color-gray;
+    }
+}

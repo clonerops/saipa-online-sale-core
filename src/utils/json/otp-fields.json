@@ -1,0 +1,44 @@
+[
+  {
+    "id": "code1",
+    "name": "code1",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  },
+  {
+    "id": "code2",
+    "name": "code2",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  },
+  {
+    "id": "code3",
+    "name": "code3",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  },
+  {
+    "id": "code4",
+    "name": "code4",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  },
+  {
+    "id": "code5",
+    "name": "code5",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  },
+  {
+    "id": "code6",
+    "name": "code6",
+    "title": "",
+    "placeholer": "-",
+    "type": "text"
+  }
+]
