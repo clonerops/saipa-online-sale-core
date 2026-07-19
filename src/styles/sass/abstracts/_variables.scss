@@ -19,3 +19,7 @@ $color-black: #000;
 // FONT  SIZE
 $default-font-size: 1.6rem;
 $default-border-radius: 1.6rem;
+$clip-path-100: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
+$clip-path-40: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+$clip-path-30: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+ 
