@@ -1,0 +1,37 @@
+[
+  {
+    "id": "firstname",
+    "name": "firstname",
+    "title": "نام",
+    "placeholer": "نام خود را وارد کنید",
+    "type": "text"
+  },
+  {
+    "id": "lastname",
+    "name": "lastname",
+    "title": "نام خانوادگی",
+    "placeholer": "نام خانوادگی خود را وارد کنید",
+    "type": "text"
+  },
+  {
+    "id": "nationalcode",
+    "name": "nationalcode",
+    "title": "کدملی",
+    "placeholer": "کدملی خود را وارد کنید",
+    "type": "text"
+  },
+  {
+    "id": "phone",
+    "name": "phone",
+    "title": "تلفن همراه",
+    "placeholer": "تلفن همراه خود را وارد کنید",
+    "type": "text"
+  },
+  {
+    "id": "email",
+    "name": "email",
+    "title": "کدملی",
+    "placeholer": "پست الکترونیک خود را وارد کنید",
+    "type": "text"
+  }
+]
