@@ -1,0 +1,6 @@
+[
+  { "id": 0, "title": "همه طرح های فروش", "icon": "/svg/car.svg" },
+  { "id": 1, "title": "فروش عادی", "icon": "/svg/call-calling.svg" },
+  { "id": 2, "title": "فروش فرسوده", "icon": "/svg/call-calling.svg" },
+  { "id": 3, "title": "فروش جوانی", "icon": "/svg/ticket.svg" }
+]

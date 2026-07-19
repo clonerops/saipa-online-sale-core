@@ -1,7 +1,6 @@
 @use "../abstracts/variables"as *;
 
 .home {
-  background-color: $color-gray-300;
   border-top-left-radius: 1.6rem;
   border-top-right-radius: 1.6rem;
   border-top: 1px solid $color-gray-200;
@@ -10,7 +9,7 @@
   background:
     url("/svg/vector.svg") left top no-repeat,
     url("/svg/vector.svg") right top no-repeat,
-    rgba($color-gray-200, 0.5);
+    rgba($color-gray-50, 0.5);
 
   &__content {
     display: flex;

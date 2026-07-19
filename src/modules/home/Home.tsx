@@ -5,13 +5,21 @@ import ProductCard from "../../shared/content/ProductCard";
 import Slider from "../../shared/components/Slider";
 import Hero from "../../shared/content/Hero";
 import FilterCard from "../../shared/content/FilterCard";
+import Filter from "../../shared/content/Filter";
 
 import FiltersDATA from "../../utils/json/filter-card.json";
 import Products from "../../utils/json/products.json";
 
 import type { IProduct } from "../../types/product/product.type";
+import { useComponentStore } from "../../store/component.store";
 
 const Home = () => {
+  const activeFilterTab = useComponentStore((state) => state.activeFilter);
+
+  const productFiltered = Products.filter(
+    (item: { productTypeId: number }) => item.productTypeId === activeFilterTab,
+  );
+
   return (
     <>
       <NavigationIntoApp />
@@ -53,8 +61,10 @@ const Home = () => {
               </Slider>
             </div>
 
+            <Filter />
+
             <div className="home__products">
-              {Products.map((item: IProduct) => (
+              {productFiltered.map((item: IProduct) => (
                 <ProductCard
                   key={item.id}
                   image={item.image}

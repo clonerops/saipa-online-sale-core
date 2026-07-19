@@ -1,0 +1,62 @@
+@use "../../abstracts/variables"as*;
+@use "../../abstracts/mixins"as*;
+
+.filter {
+    background-color: $color-white;
+    border-radius: 1rem;
+
+    &__lists {
+        display: flex;
+        gap: 1rem;
+        padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+    }
+
+    &__list {
+        padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+        list-style: none;
+
+        &:hover,
+        &.active {
+            padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+            background-color: $color-secondary;
+            border-radius: 1rem;
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+
+            .filter__text {
+                color: $color-white;
+            }
+
+            .filter__svg svg {
+                fill: $color-white;
+            }
+
+        }
+
+        &:last-child {
+            margin-right: auto;
+        }
+
+    }
+
+    &__btn {
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        display: flex;
+        gap: .5rem;
+    }
+
+    &__svg svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-gray;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-family: Vazir;
+        color: $color-gray;
+    }
+}

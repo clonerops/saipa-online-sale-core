@@ -4,41 +4,47 @@
     "label": "فروش فوق العاده",
     "image": "images/quik.png",
     "title": "کوئیک سفید",
-    "logo": "/svg/saipa.svg"
+    "logo": "/svg/saipa.svg",
+    "productTypeId": 2
   },
   {
     "id": 3,
     "label": "فروش فوری",
     "image": "images/changan.webp",
     "title": "چانگان cs 55",
-    "logo": "/svg/changan-logo.svg"
+    "logo": "/svg/changan-logo.svg",
+    "productTypeId": 1
   },
   {
     "id": 4,
     "label": "فروش فوری",
     "image": "images/nissan.png",
     "title": "نیسان زامیاد",
-    "logo": "/svg/nissan.svg"
+    "logo": "/svg/nissan.svg",
+    "productTypeId": 1
   },
   {
     "id": 5,
     "label": "فروش فوری",
     "image": "images/changan.webp",
     "title": "چانگان cs 55",
-    "logo": "/svg/changan-logo.svg"
+    "logo": "/svg/changan-logo.svg",
+    "productTypeId": 1
   },
   {
     "id": 6,
     "label": "فروش فوق العاده",
     "image": "images/atlas.png",
     "title": "اطلس",
-    "logo": "/svg/saipa.svg"
+    "logo": "/svg/saipa.svg",
+    "productTypeId": 2
   },
   {
     "id": 7,
     "label": "پیش فروش",
     "image": "images/vanet.webp",
     "title": "وانت 151",
-    "logo": "/svg/saipa.svg"
+    "logo": "/svg/saipa.svg",
+    "productTypeId": 3
   }
 ]
