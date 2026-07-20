@@ -1,16 +1,15 @@
 @use "../../abstracts/variables"as*;
+@use "../../abstracts/mixins"as*;
 
 .logo-vertical {
     flex: 0 0 20%;
 
-    display: flex;
+    @include flex-column;
     align-items: center;
-    flex-direction: column;
     padding: 2rem;
 
     &__text-box {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin-right: 0.8rem;
     }
 

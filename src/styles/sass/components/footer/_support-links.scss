@@ -38,10 +38,9 @@
         }
 
         &-text-box {
-            display: flex;
+            @include flex-column;
             justify-content: flex-start;
             align-items: flex-start;
-            flex-direction: column;
             gap: 1rem;
         }
 

@@ -1,4 +1,5 @@
     @use "../../abstracts/variables"as *;
+    @use "../../abstracts/mixins"as *;
 
     .action-box {
         display: flex;
@@ -14,8 +15,7 @@
         border-radius: $default-border-radius;
 
         &__text-box {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
         }
 
         &__text {

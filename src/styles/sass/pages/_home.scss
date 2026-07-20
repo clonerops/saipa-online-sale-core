@@ -1,4 +1,5 @@
 @use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
 
 .home {
   border-top-left-radius: 1.6rem;
@@ -12,8 +13,7 @@
     rgba($color-gray-50, 0.5);
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 3rem;
 
   }

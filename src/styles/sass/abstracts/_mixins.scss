@@ -4,6 +4,10 @@
   align-items: center !important;
 }
 
+@mixin flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
 
 /*
 
