@@ -4,19 +4,19 @@
       color: $color-gray;
 
       &__up {
-          font-size: 2rem;
+          font-size: $font-size-2;
           font-weight: 500;
           font-family: Vazir;
       }
 
       &__main {
-          font-size: 2.4rem;
+          font-size: $font-size-2-4;
           font-family: Vazir_Bold;
           font-weight: 800;
       }
 
       &__saipa {
-          font-size: 2.4rem;
+          font-size: $font-size-2-4;
           font-family: Vazir_Bold;
           font-weight: 800;
           color: $color-primary;
@@ -38,7 +38,7 @@
       }
 
       &__down {
-          font-size: 2rem;
+          font-size: $font-size-2;
           font-weight: 500;
           font-family: Vazir_Medium;
           position: relative;

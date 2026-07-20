@@ -19,14 +19,14 @@
         }
 
         &__text {
-            font-size: 1.4rem;
+            font-size: $font-size-1-4;
             font-family: Vazir_Bold;
             font-weight: 800;
             color: $color-gray;
         }
 
         &__sub {
-            font-size: 1.2rem;
+            font-size: $font-size-1-2;
             font-family: Vazir_Thin;
             font-weight: 400;
             color: $color-gray;
