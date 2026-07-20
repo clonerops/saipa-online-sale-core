@@ -2,7 +2,7 @@
 @use "../../abstracts/mixins" as *;
 
 .btn {
-  font-family: Vazir_Thin;
+  font-family: $font-family-THIN;
   font-size: $default-font-size;
   padding: 1rem 2rem; // 1rem 2rem
   border-radius: 8px;

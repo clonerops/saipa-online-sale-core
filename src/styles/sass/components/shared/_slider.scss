@@ -14,7 +14,7 @@
   &__title {
     position: relative;
     font-size: $default-font-size;
-    font-family: Vazir_Bold;
+    font-family: $font-family-BOLD;
     padding-bottom: 1rem;
 
     &::after {

@@ -15,13 +15,13 @@
     }
 
     &__text-1 {
-        font-family: Vazir;
+        font-family: $default-font-family;
         font-size: $default-font-size;
         color: $color-gray;
     }
 
     &__text-2 {
-        font-family: Vazir_Bold;
+        font-family: $font-family-BOLD;
         font-size: $default-font-size;
         color: $color-gray;
 

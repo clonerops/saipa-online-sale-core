@@ -5,7 +5,7 @@
     &__label {
         width: 100%;
         font-size: $font-size-1-4;
-        font-family: Vazir_Bold;
+        font-family: $font-family-BOLD;
         color: $color-gray;
     }
 
@@ -22,7 +22,7 @@
     &__list {
         display: flex;
         gap: 2rem;
-        font-family: Vazir;
+        font-family: $default-font-family;
         font-size: $font-size-1-2;
         padding: 0.8rem 0.4rem;
         color: $color-gray;
@@ -47,13 +47,13 @@
 
         &-title {
             font-size: $font-size-1-2;
-            font-family: Vazir;
+            font-family: $default-font-family;
         }
 
         &-sub {
             direction: ltr;
             font-size: $font-size-1-4;
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
         }
     }
 }

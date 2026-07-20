@@ -35,7 +35,7 @@
   }
 
   &__label {
-    font-family: Vazir;
+    font-family: $default-font-family;
     position: absolute;
     top: 16px;
     right: -6px;
@@ -76,7 +76,7 @@
 
   &__text {
     font-size: $font-size-1-8;
-    font-family: Vazir_Bold;
+    font-family: $font-family-BOLD;
     color: $color-gray;
     text-transform: uppercase;
   }
@@ -94,7 +94,7 @@
 
     &-span {
       font-size: $font-size-1-2;
-      font-family: Vazir;
+      font-family: $default-font-family;
       padding: 0.2rem 1rem;
       background-color: $color-gray-100;
       border-radius: 0.6rem;
@@ -115,12 +115,12 @@
 
       &-title {
         font-size: $font-size-1-2;
-        font-family: Vazir;
+        font-family: $default-font-family;
         color: $color-gray;
       }
       &-description {
         font-size: $font-size-1-4;
-        font-family: Vazir_Bold;
+        font-family: $font-family-BOLD;
         color: $color-gray;
       }
     }

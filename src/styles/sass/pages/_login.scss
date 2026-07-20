@@ -21,13 +21,13 @@
         &-text-1 {
             font-size: $font-size-2-4;
             font-weight: 700;
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
             color: $color-secondary;
         }
 
         &-text-2 {
             font-size: $default-font-size;
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
             color: $color-gray;
 
         }
@@ -35,7 +35,7 @@
         &-text-register {
             padding-right: .6rem;
             font-size: $default-font-size;
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
             color: $color-primary;
             text-decoration: none;
 
@@ -49,7 +49,7 @@
 
     &__forget {
         font-size: $default-font-size;
-        font-family: Vazir;
+        font-family: $default-font-family;
         text-decoration: none;
         color: $color-black;
 
@@ -57,14 +57,14 @@
 
         &:hover {
             transform: scale(1.05);
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
         }
     }
 
     &__dealer {
         padding-top: 1rem;
         font-size: $default-font-size;
-        font-family: Vazir;
+        font-family: $default-font-family;
         text-decoration: none;
         color: $color-black;
 
@@ -72,7 +72,7 @@
 
         &:hover {
             transform: scale(1.05);
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
         }
 
     }

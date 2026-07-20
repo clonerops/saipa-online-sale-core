@@ -6,18 +6,18 @@
       &__up {
           font-size: $font-size-2;
           font-weight: 500;
-          font-family: Vazir;
+          font-family: $default-font-family;
       }
 
       &__main {
           font-size: $font-size-2-4;
-          font-family: Vazir_Bold;
+          font-family: $font-family-BOLD;
           font-weight: 800;
       }
 
       &__saipa {
           font-size: $font-size-2-4;
-          font-family: Vazir_Bold;
+          font-family: $font-family-BOLD;
           font-weight: 800;
           color: $color-primary;
           position: relative;
@@ -40,7 +40,7 @@
       &__down {
           font-size: $font-size-2;
           font-weight: 500;
-          font-family: Vazir_Medium;
+          font-family: $font-family-MEDIUM;
           position: relative;
 
           &::after {

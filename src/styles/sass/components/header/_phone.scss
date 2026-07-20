@@ -19,7 +19,7 @@
 
     &__text {
         direction: ltr;
-        font-family: Vazir;
+        font-family: $default-font-family;
         font-size: $default-font-size;
         color: $color-secondary;
     }

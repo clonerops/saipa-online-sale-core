@@ -23,12 +23,12 @@
 
   &__title {
     font-size: $default-font-size;
-    font-family: Vazir_Bold;
+    font-family: $font-family-BOLD;
     color: $color-gray;
   }
   &__text {
     font-size: $font-size-1-2;
-    font-family: Vazir;
+    font-family: $default-font-family;
   }
 
   //   CORNER

@@ -1,23 +1,23 @@
 @font-face {
-    font-family: Vazir;
+    font-family: $default-font-family;
     src: url(../../fonts/Vazir-FD-WOL.ttf);
     font-style: normal;
 }
 
 @font-face {
-    font-family: Vazir_Thin;
+    font-family: $font-family-THIN;
     src: url(../../fonts/Vazir-Thin-FD-WOL.ttf);
     font-style: normal;
 }
 
 @font-face {
-    font-family: Vazir_Bold;
+    font-family: $font-family-BOLD;
     src: url(../../fonts/Vazir-Bold-FD-WOL.ttf);
     font-style: normal;
 }
 
 @font-face {
-    font-family: Vazir_Medium;
+    font-family: $font-family-MEDIUM;
     src: url(../../fonts/Vazir-Medium-FD-WOL.ttf);
     font-style: normal;
 }

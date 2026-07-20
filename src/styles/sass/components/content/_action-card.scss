@@ -20,14 +20,14 @@
 
         &__text {
             font-size: $font-size-1-4;
-            font-family: Vazir_Bold;
+            font-family: $font-family-BOLD;
             font-weight: 800;
             color: $color-gray;
         }
 
         &__sub {
             font-size: $font-size-1-2;
-            font-family: Vazir_Thin;
+            font-family: $font-family-THIN;
             font-weight: 400;
             color: $color-gray;
             width: 80%;

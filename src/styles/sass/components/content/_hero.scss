@@ -25,12 +25,12 @@
     }
     &-text-1 {
       font-size: $font-size-2;
-      font-family: Vazir;
+      font-family: $default-font-family;
       color: $color-gray;
     }
     &-text-2 {
       font-size: $font-size-3-2;
-      font-family: Vazir_Bold;
+      font-family: $font-family-BOLD;
       color: $color-secondary;
     }
     &-text-3 {
@@ -53,7 +53,7 @@
     }
     &-text-4 {
       font-size: $font-size-2;
-      font-family: Vazir;
+      font-family: $default-font-family;
       color: $color-gray;
       position: relative;
       &::after {
@@ -130,7 +130,7 @@
       &-text {
         display: block;
         font-size: $font-size-1-8;
-        font-family: Vazir_Bold;
+        font-family: $font-family-BOLD;
         color: $color-white;
       }
     }
