@@ -1,7 +1,8 @@
-import type { FieldValues } from "react-hook-form";
-import type { InputType } from "../../types/shared/input.type";
+// import type { FieldValues } from "react-hook-form";
+// import type { InputType } from "../../types/shared/input.type";
+import type { BaseInputType } from "../../types/shared/base-input.type";
 
-const Input = <T extends FieldValues>({
+const Input = ({
   id,
   title,
   name,
@@ -12,10 +13,10 @@ const Input = <T extends FieldValues>({
   maxLength,
   onChange,
   onKeyDown,
-  inputRef,
-  register,
-}: InputType<T>) => {
-  const registerProps = register(name);
+  // inputRef,
+  // register,
+}: BaseInputType) => {
+  // const registerProps = register(name);
 
   return (
     <div className="input">
@@ -23,7 +24,7 @@ const Input = <T extends FieldValues>({
         {title}
       </label>
       <input
-        {...registerProps}
+        // {...registerProps}
         className="input__field"
         name={name}
         type={type}
@@ -31,13 +32,13 @@ const Input = <T extends FieldValues>({
         maxLength={maxLength}
         onChange={onChange}
         onKeyDown={onKeyDown}
-        ref={(el) => {
-          registerProps.ref(el);
+        // ref={(el) => {
+        //   registerProps.ref(el);
 
-          if (typeof inputRef === "function") {
-            inputRef(el);
-          }
-        }}
+        //   if (typeof inputRef === "function") {
+        //     inputRef(el);
+        //   }
+        // }}
       />
       {hasHint && hintText}
     </div>

@@ -1,32 +1,30 @@
-import { useForm, type Path, type SubmitHandler } from "react-hook-form";
+// import { useForm, type Path, type SubmitHandler } from "react-hook-form";
 
 import Button from "../../../shared/components/Button";
 import Input from "../../../shared/components/Input";
 
 import RegisterFields from "../../../utils/json/register-fields.json";
 
-import type { RegisterFormType } from "../../../types/auth/register/register.type";
+// import type { RegisterFormType } from "../../../types/auth/register/register.type";
 import PasswordInput from "../../../shared/components/PasswordInput";
 import Captcha from "../../../shared/components/Captcha";
 
 const RegisterForm = () => {
-  const { register, handleSubmit } = useForm<RegisterFormType>();
+  // const { register, handleSubmit } = useForm<RegisterFormType>();
 
-  const onSubmit: SubmitHandler<RegisterFormType> = (data) => {
-    console.log(data);
-  };
+  const onSubmit = () => {};
 
   return (
-    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+    <form className="form" action={onSubmit}>
       {RegisterFields.map((item) => (
         <Input
           key={item.id}
           id={item.id}
-          name={item.name as Path<RegisterFormType>}
+          name={item.name}
           placeholder={item.placeholer}
           title={item.title}
           type="text"
-          register={register}
+          // register={register}
         />
       ))}
       <PasswordInput
@@ -35,7 +33,7 @@ const RegisterForm = () => {
         title="کلمه عبور"
         placeholder="کلمه عبور خود را وارد کنید"
         type="password"
-        register={register}
+        // register={register}
       />
       <PasswordInput
         id="repeatPassword"
@@ -43,7 +41,7 @@ const RegisterForm = () => {
         title="تکرار کلمه عبور"
         placeholder="تکرار کلمه عبور خود را وارد کنید"
         type="password"
-        register={register}
+        // register={register}
       />
       <Captcha
         id="captchaCode"
@@ -51,7 +49,7 @@ const RegisterForm = () => {
         title="تصویر امنیتی"
         type="text"
         placeholder="کد روبرو را وارد کنید"
-        register={register}
+        // register={register}
       />
       <Button text="ثبت نام" className="btn__oranged" />
     </form>

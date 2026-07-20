@@ -3,9 +3,9 @@ import type {
   KeyboardEventHandler,
   ReactNode,
 } from "react";
-import type { FieldValues, Path } from "react-hook-form";
+// import type { FieldValues, Path } from "react-hook-form";
 
-export type BaseInputType<T extends FieldValues> = {
+export type BaseInputType = {
   id: string;
   title: string;
   type: string;
@@ -17,5 +17,5 @@ export type BaseInputType<T extends FieldValues> = {
   onKeyDown?: KeyboardEventHandler<HTMLInputElement>;
   inputRef?: React.Ref<HTMLInputElement>;
 
-  name: Path<T>;
+  name: string;
 };

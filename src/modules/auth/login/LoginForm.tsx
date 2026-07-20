@@ -3,23 +3,29 @@ import { ReactSVG } from "react-svg";
 
 import Button from "../../../shared/components/Button";
 import Input from "../../../shared/components/Input";
-import { useForm, type SubmitHandler } from "react-hook-form";
-import type { LoginFormType } from "../../../types/auth/login/login.type";
 
 const LoginForm = () => {
   const [password, setPassword] = useState<boolean>(false);
   const actionShowPasswordState = () => setPassword(!password);
 
-  const { register, handleSubmit } = useForm<LoginFormType>();
+  // const { register, handleSubmit } = useForm<LoginFormType>();
 
-  const onSubmit: SubmitHandler<LoginFormType> = (data) => {
-    console.log(data);
-  };
+  // const onSubmit: SubmitHandler<LoginFormType> = (data) => {
+  //   console.log(data);
+  // };
+
+  async function formAction(formData: FormData) {
+    const newLogin = {
+      nationalcode: formData.get("nationalcode"),
+      password: formData.get("password"),
+    };
+    console.log(newLogin);
+  }
 
   return (
-    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+    <form action={formAction} className="form">
       <Input
-        register={register}
+        // register={register}
         id="nationalcode"
         name="nationalcode"
         title="کدملی"
@@ -29,7 +35,7 @@ const LoginForm = () => {
 
       <div className="form__password-box">
         <Input
-          register={register}
+          // register={register}
           id="password"
           name="password"
           title="رمز عبور"
@@ -45,7 +51,7 @@ const LoginForm = () => {
       </div>
       <div className="captcha">
         <Input
-          register={register}
+          // register={register}
           id="captchaCode"
           name="captchaCode"
           title="تصویر امنیتی"
@@ -64,7 +70,7 @@ const LoginForm = () => {
           />
         </div>
       </div>
-      <Button text="ورود" className="btn__oranged" />
+      <Button text="ورود" className="btn__oranged" btnType="submit" />
     </form>
   );
 };

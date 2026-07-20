@@ -1,25 +1,24 @@
 import { useState } from "react";
 import { ReactSVG } from "react-svg";
-import type { FieldValues } from "react-hook-form";
 
 import Input from "./Input";
 
-import type { PasswordInputType } from "../../types/shared/password-input.type";
+import type { BaseInputType } from "../../types/shared/base-input.type";
 
-const PasswordInput = <T extends FieldValues>({
+const PasswordInput = ({
   id,
   name,
   title,
   placeholder,
-  register,
-}: PasswordInputType<T>) => {
+  // register,
+}: BaseInputType) => {
   const [password, setPassword] = useState<boolean>(false);
   const actionShowPasswordState = () => setPassword(!password);
 
   return (
     <div className="form__password-box">
       <Input
-        register={register}
+        // register={register}
         id={id}
         name={name}
         title={title}

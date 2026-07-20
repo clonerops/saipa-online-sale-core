@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useForm, type Path, type SubmitHandler } from "react-hook-form";
+// import { useForm, type Path, type SubmitHandler } from "react-hook-form";
 import Input from "../../../shared/components/Input";
 
 import OtpFields from "../../../utils/json/otp-fields.json";
@@ -9,7 +9,7 @@ import Button from "../../../shared/components/Button";
 const OtpForm = () => {
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
-  const { register, handleSubmit } = useForm<OtpFormType>();
+  // const { register, handleSubmit } = useForm<OtpFormType>();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -29,17 +29,13 @@ const OtpForm = () => {
     }
   };
 
-  const onSubmit: SubmitHandler<OtpFormType> = (data) => {
-    console.log(data);
-  };
-
   return (
-    <form className="otp__form" onSubmit={handleSubmit(onSubmit)}>
+    <form className="otp__form">
       <div className="otp__form-code">
         {OtpFields.map((item, index) => (
           <Input
             id={item.id}
-            name={item.name as Path<OtpFormType>}
+            name={item.name}
             placeholder={item.placeholer}
             title={item.title}
             type="text"
@@ -49,7 +45,6 @@ const OtpForm = () => {
             }}
             onChange={(e: any) => handleChange(e, index)}
             onKeyDown={(e: any) => handleKeyDown(e, index)}
-            register={register}
           />
         ))}
       </div>
