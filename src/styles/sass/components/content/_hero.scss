@@ -2,8 +2,7 @@
 @use "../../abstracts/mixins"as *;
 
 .hero {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
 
   &__content {
     @include flex-column;

@@ -1,11 +1,9 @@
 @use "../../abstracts/variables"as *;
+@use "../../abstracts/mixins"as *;
 
 .accordion {
     &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+        @include flex-between;
         cursor: pointer;
     }
 

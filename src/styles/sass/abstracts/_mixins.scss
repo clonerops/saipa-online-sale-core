@@ -9,6 +9,12 @@
   flex-direction: column !important;
 }
 
+@mixin flex-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
 /*
 
 - 0-600px             phone  
@@ -23,25 +29,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint==phone {
     @media (max-width: 37.5em) {
       // 600px / 16px = 37.5em
       @content;
     }
   }
-  @if $breakpoint == tab-port {
+
+  @if $breakpoint==tab-port {
     @media (max-width: 56.25em) {
       // 900px / 16px = 56.25em
       @content;
     }
   }
-  @if $breakpoint == tab-land {
+
+  @if $breakpoint==tab-land {
     @media (max-width: 75em) {
       // 1200px / 16px = 75em
       @content;
     }
   }
-  @if $breakpoint == big-desktop {
+
+  @if $breakpoint==big-desktop {
     @media (min-width: 112.5em) {
       // 1800px / 16px = 112.5em
       @content;

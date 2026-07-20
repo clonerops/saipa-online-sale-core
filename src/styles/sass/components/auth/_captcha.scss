@@ -1,8 +1,8 @@
 @use "../../abstracts/variables"as*;
+@use "../../abstracts/mixins"as*;
 
 .captcha {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
 
     &__box {
         display: flex;

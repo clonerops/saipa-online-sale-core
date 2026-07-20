@@ -7,11 +7,9 @@
     }
 
     .action-card {
+        @include flex-between;
         background-color: $color-gray-50;
         padding: 1.2rem 1.6rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         border-radius: $default-border-radius;
 
         &__text-box {

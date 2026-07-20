@@ -1,9 +1,8 @@
 @use "../../abstracts/variables"as*;
+@use "../../abstracts/mixins"as*;
 
 .enamad {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between;
     background-color: $color-white;
     border-radius: 16px;
     padding: 0.8rem 2.4rem;

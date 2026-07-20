@@ -68,8 +68,7 @@
   }
 
   &__text-box {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
   }
 
   &__text {
@@ -125,10 +124,9 @@
   }
 
   &__footer {
-    display: flex;
+    @include flex-between;
     flex-direction: row;
     gap: 1rem;
-    justify-content: space-between;
     align-items: center;
 
     @include respond(tab-land) {
