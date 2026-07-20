@@ -111,9 +111,7 @@
       clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
 
       &-lists {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
       }
 
       &-list {

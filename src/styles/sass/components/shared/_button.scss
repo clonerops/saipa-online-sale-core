@@ -1,16 +1,13 @@
-@use "../../abstracts/variables" as *;
-@use "../../abstracts/mixins" as *;
+@use "../../abstracts/variables"as *;
+@use "../../abstracts/mixins"as *;
 
 .btn {
+  @include flex-center;
   font-family: $font-family-THIN;
   font-size: $default-font-size;
   padding: 1rem 2rem; // 1rem 2rem
   border-radius: 8px;
   transition: all 0.2s;
-  display: flex;
-  align-items: center; // width: 100%;
-  justify-content: center;
-
   outline: none;
   border: none;
   cursor: pointer;
@@ -70,6 +67,7 @@
       width: 1rem;
     }
   }
+
   &__bordered-gray {
     color: $color-gray;
     border: 1px solid $color-gray;

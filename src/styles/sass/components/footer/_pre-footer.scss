@@ -1,7 +1,5 @@
-@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins"as *;
 
 .pre-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @include flex-center;
 }
