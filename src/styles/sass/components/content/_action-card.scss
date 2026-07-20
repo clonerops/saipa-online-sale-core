@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-radius: 1.6rem;
+        border-radius: $default-border-radius;
 
         &__text-box {
             display: flex;

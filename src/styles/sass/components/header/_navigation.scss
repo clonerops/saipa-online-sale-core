@@ -11,7 +11,7 @@
         display: flex;
         list-style: none;
         background-color: $color-gray-100;
-        border-radius: 1.6rem;
+        border-radius: $default-border-radius;
         padding: .4rem;
 
     }
@@ -23,7 +23,7 @@
         &:hover {
             background-color: $color-white;
             padding: 1.2rem 1.6rem 0.8rem 1.6rem;
-            border-radius: 1.2rem;
+            border-radius: $border-radius-1-2;
         }
     }
 

@@ -4,7 +4,7 @@
 .navigation-into {
   @include flex-center;
   padding: 0 0.6rem;
-  border-radius: 1.6rem;
+  border-radius: $default-border-radius;
 
   &__lists {
     @include flex-center;

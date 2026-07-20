@@ -21,7 +21,7 @@
 .product {
   background-color: $color-white;
   padding: 0.8rem;
-  border-radius: 1.6rem;
+  border-radius: $default-border-radius;
   position: relative;
   transition: all 0.2s;
 
@@ -48,7 +48,7 @@
   &__img-box {
     background-color: $color-gray-50;
     clip-path: $clip-path-40;
-    border-radius: 1.2rem;
+    border-radius: $border-radius-1-2;
 
     aspect-ratio: 16 / 9;
     overflow: hidden;

@@ -4,7 +4,7 @@
 .header {
     background-color: $color-white;
     padding: 1.6rem 0.8rem;
-    border-radius: 1.6rem;
+    border-radius: $default-border-radius;
     margin: 2.4rem;
 
     display: flex;

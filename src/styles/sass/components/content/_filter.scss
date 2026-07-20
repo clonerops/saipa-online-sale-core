@@ -3,7 +3,7 @@
 
 .filter {
     background-color: $color-white;
-    border-radius: 1rem;
+    border-radius: $border-radius-1;
 
     &__lists {
         display: flex;
@@ -19,7 +19,7 @@
         &.active {
             padding: 1.2rem 1.6rem 0.8rem 1.6rem;
             background-color: $color-secondary;
-            border-radius: 1rem;
+            border-radius: $border-radius-1;
             box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
 
